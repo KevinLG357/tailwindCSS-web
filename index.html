@@ -25,6 +25,27 @@
   }
 }
 
+@layer base {
+  h5 {
+    @apply text-2xl;
+  }
+}
+
+
+@layer components {
+  .card-style{
+    @apply max-w-sm bg-white rounded border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700;
+  }
+
+  .title-style{
+    @apply mb-2 font-bold tracking-tight text-gray-900 dark:text-white;
+  }
+
+  .description-style{
+    @apply mb-3 font-normal text-gray-700 dark:text-gray-400;
+  }
+}
+
 .background {
   background-image: url(https://i.blogs.es/a6d4a3/peaky-blinders/1366_2000.jpeg);
   background-size: cover;
@@ -32,6 +53,7 @@
   width: 100%;
 }
 </style>
+
 
 </head>
 
@@ -167,71 +189,71 @@
     </div>
     <div class="container space-x-4 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 p-5">
 
-      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ml-4">
+      <div class="card-style ml-4">
         <a href="#">
           <img class="rounded-t-lg" src="img/loveAndThunder.jpg" alt="">
         </a>
         <div class="p-5">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Thor: Love and Thunder</h5>
+            <h5 class="title-style">Thor: Love and Thunder</h5>
           </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Thor: Love and Thunder is a 2022 American superhero film based on Marvel Comics featuring the character Thor, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to Thor: Ragnarok (2017) and the 29th film in the Marvel Cinematic Universe (MCU).</p>
+          <p class="description-style">Thor: Love and Thunder is a 2022 American superhero film based on Marvel Comics featuring the character Thor, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to Thor: Ragnarok (2017) and the 29th film in the Marvel Cinematic Universe (MCU).</p>
         </div>
       </div>
 
 
-      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div class="card-style">
         <a href="#">
           <img class="rounded-t-lg" src="img/DoctorStrange.jpg" alt="">
         </a>
         <div class="p-5">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Doctor Strange in the Multiverse of Madness
+            <h5 class="title-style">Doctor Strange in the Multiverse of Madness
               (2022)</h5>
           </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">El Dr. Stephen Strange abre un portal al multiverso al utilizar un hechizo prohibido. Ahora, su equipo debe enfrentarse a una amenaza que podría destruirlo todo.</p>
+          <p class="description-style">El Dr. Stephen Strange abre un portal al multiverso al utilizar un hechizo prohibido. Ahora, su equipo debe enfrentarse a una amenaza que podría destruirlo todo.</p>
         </div>
       </div>
 
 
 
-      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div class="card-style">
         <a href="#">
           <img class="rounded-t-lg" src="img/the_shining.jpg" alt="">
         </a>
         <div class="p-5">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Shining (1980)</h5>
+            <h5 class="title-style">The Shining (1980)</h5>
           </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">La película relata la historia de Jack Torrance, un exprofesor que acepta un puesto como vigilante de invierno en un solitario hotel de alta montaña para ocuparse del mantenimiento. Al poco tiempo de haberse instalado allí junto con su esposa y su hijo, empieza a sufrir inquietantes trastornos de personalidad.</p>
+          <p class="description-style">La película relata la historia de Jack Torrance, un exprofesor que acepta un puesto como vigilante de invierno en un solitario hotel de alta montaña para ocuparse del mantenimiento. Al poco tiempo de haberse instalado allí junto con su esposa y su hijo, empieza a sufrir inquietantes trastornos de personalidad.</p>
         </div>
       </div>
 
 
 
-      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div class="card-style">
         <a href="#">
           <img class="rounded-t-lg" src="img/annabelle.jpg" alt="">
         </a>
         <div class="p-5">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Annabelle (2014)</h5>
+            <h5 class="title-style">Annabelle (2014)</h5>
           </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">John Form ha encontrado el regalo perfecto para su esposa embarazada, Mia: una muñeca antigua ataviada con un reluciente vestido de boda; sin embargo, Mia no podrá disfrutar mucho de su regalo. Una noche aterradora, los miembros de una secta satánica invaden su hogar y atacan a la pareja.</p>
+          <p class="description-style">John Form ha encontrado el regalo perfecto para su esposa embarazada, Mia: una muñeca antigua ataviada con un reluciente vestido de boda; sin embargo, Mia no podrá disfrutar mucho de su regalo. Una noche aterradora, los miembros de una secta satánica invaden su hogar y atacan a la pareja.</p>
         </div>
       </div>
 
 
 
-      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div class="card-style">
         <a href="#">
           <img class="rounded-t-lg" src="img/endgame.jpg" alt="">
         </a>
         <div class="p-5">
           <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vengadores: Endgame (Joe and Anthony Russo, 2019)</h5>
+            <h5 class="title-style">Vengadores: Endgame (Joe and Anthony Russo, 2019)</h5>
           </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Después de los eventos devastadores de ‘Avengers: Infinity War’, el universo está en ruinas debido a las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deben reunirse una vez más para deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar cuáles son las consecuencias que pueda tener.</p>
+          <p class="description-style">Después de los eventos devastadores de ‘Avengers: Infinity War’, el universo está en ruinas debido a las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deben reunirse una vez más para deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar cuáles son las consecuencias que pueda tener.</p>
         </div>
       </div>
 
