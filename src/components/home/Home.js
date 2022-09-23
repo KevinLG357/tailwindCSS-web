@@ -5,7 +5,8 @@ const Home = () => {
   return (
     <>
       <div>
-        <div className="bg-gray-900 bg-cover background mx-auto">
+        <div className="bg-gray-900 bg-cover mx-auto">
+          <img src="https://i.blogs.es/a6d4a3/peaky-blinders/1366_2000.jpeg" alt="background" className="w-full h-auto absolute" />
           <aside className="mt-52 w-16 absolute" aria-label="Sidebar">
             <div className="overflow-y-auto py-4 px-3 pt-12">
               <ul className="space-y-8">
@@ -133,12 +134,12 @@ const Home = () => {
               </ul>
             </div>
           </aside>
-          <div className="relative pb-32">
-            <div className="flex mb-56 pt-28">
-              <h2 className="font-sans font-semibold text-clifford text-5xl ml-10 pl-10 pt-10 mt-16">
+          <div className="relative pb-32 lg:w-1/2">
+            <div className="flex mb-56 sm:pt-1 lg:pt-28">
+              <h2 className="font-sans font-semibold text-clifford sm:text-3xl lg:text-5xl ml-10 pl-10 md:pt-0 lg:pt-10 mt-16">
                 Peaky Blinders
               </h2>
-              <p className="absolute inset-x-0 top-5 font-sans text-clifford text-lg ml-10 pl-10 pt-64 text-clifford">
+              <p className="absolute inset-x-0 sm:top-10 md:top-20 lg:top-5 font-sans sm:text-sm lg:text-lg ml-10 pl-10 xs:pt-16 sm:pt-20 md:pt-8 lg:pt-64 text-clifford">
                 Birmingham, 1939. Thomas Shelby es el violento <br /> líder de
                 una conocida banda; un jefe del crimen <br /> organizado
                 dispuesto a llegar a lo más alto sin <br /> importar el precio.
@@ -168,12 +169,13 @@ const Home = () => {
 
         <div className="bg-slate-800 mx-auto pl-5">
           <div className="ml-14">
-            <h1 className="pt-3 text-clifford font-bold">
+            <h1 className="pt-3 text-clifford font-bold sm:mx-auto">
               Mi Top de peliculas
             </h1>
           </div>
-          <div className="container space-x-4 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 p-5 mb-2">
-            <div className="card-style ml-4 drop-shadow-md">
+
+          <div className="container space-x-4 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 p-5 mb-2 mt-0">
+            <div className="card-style ml-4 drop-shadow-md mt-5">
               <a href="#">
                 <img
                   className="rounded-t-lg"
@@ -196,7 +198,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="card-style drop-shadow-md">
+            <div className="card-style drop-shadow-md mt-5">
               <a href="#">
                 <img
                   className="rounded-t-lg"
@@ -218,7 +220,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="card-style drop-shadow-md">
+            <div className="card-style drop-shadow-md mt-5">
               <a href="#">
                 <img
                   className="rounded-t-lg"
@@ -241,7 +243,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="card-style drop-shadow-md">
+            <div className="card-style drop-shadow-md mt-5">
               <a href="#">
                 <img className="rounded-t-lg" src="img/annabelle.jpg" alt="" />
               </a>
@@ -259,7 +261,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="card-style drop-shadow-md">
+            <div className="card-style drop-shadow-md mt-5">
               <a href="#">
                 <img className="rounded-t-lg" src="img/endgame.jpg" alt="" />
               </a>
